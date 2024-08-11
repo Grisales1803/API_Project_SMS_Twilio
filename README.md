@@ -20,6 +20,8 @@ The data is gathered when the user interacts with the Flask application, and it 
 - **Data Processing**: The data is formatted and prepared for sending.
 - **SMS Dispatch**: Using the Twilio API, the processed information is sent to the user's mobile phone as an SMS. See [Twilio API](https://www.twilio.com/)
 
+[Check this project on Replit](https://replit.com/@grisales1803/Assignment6ConnectedData)
+
 ## Conclusions
 
 This project demonstrates the potential of integrating multiple APIs within a single application to provide diverse information in a simple and accessible format. By using Flask as the web framework, the application is lightweight and easily deployable. The use of SMS ensures that the information reaches users in a convenient and direct manner, highlighting the power of modern web technologies in creating engaging user experiences. Additionally, the application logs every message sent into a text file (messages.txt), ensuring that all communications are recorded for future reference. This logging feature not only provides a complete history of interactions but also adds a layer of transparency and reliability to the application.
