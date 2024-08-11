@@ -8,17 +8,17 @@ This project is a Flask-based web application designed to send SMS messages with
 ## Flow of the Data Architecture
 The application's data architecture revolves around API integrations:
 
-1. **Weather Data**: Utilizes the OpenWeatherMap API to fetch current weather conditions based on the user's location.
-2. **Space Data**: Accesses the Open Notify API to retrieve the number of people currently in space and their details.
-3. **Harry Potter Character Data**: Fetches random Harry Potter character details using a custom API or dataset.
-4. **Message Logging**: Each SMS sent is logged into a text file (`messages.txt`) for record-keeping. The log includes the recipient's name, the weather update, space information, Harry Potter character details, and the timestamp.
+1. **Weather Data**: Utilizes the OpenWeatherMap API to fetch current weather conditions based on the user's location. See [OpenWeatherMap API](https://openweathermap.org/api)
+2. **Space Data**: Accesses the Open Notify API to retrieve the number of people currently in space and their details. See [Open Notify API](http://api.open-notify.org/)
+3. **Harry Potter Character Data**: Fetches random Harry Potter character details using a custom API or dataset. See [Harry Potter API](https://hp-api.herokuapp.com/)
+4. **Message Logging**: Each SMS sent is logged into a text file (`messages.txt`) for record-keeping. The log includes the recipient's name, the weather update, space information, Harry Potter character details, and the timestamp. 
 
 The data is gathered when the user interacts with the Flask application, and it is then processed and sent via SMS using the Twilio API. The data flow is as follows:
 
 - **User Request**: The user initiates a request by interacting with the Flask app.
 - **Data Gathering**: The application makes API calls to the Weather, Space, and Harry Potter APIs to retrieve the latest information.
 - **Data Processing**: The data is formatted and prepared for sending.
-- **SMS Dispatch**: Using the Twilio API, the processed information is sent to the user's mobile phone as an SMS.
+- **SMS Dispatch**: Using the Twilio API, the processed information is sent to the user's mobile phone as an SMS. See [Twilio API](https://www.twilio.com/)
 
 ## Conclusions
 
