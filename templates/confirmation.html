@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- The head section contains meta information and style rules for the page -->
+    <meta charset="UTF-8"> <!-- Specifies the character encoding for the document (UTF-8 for supporting all characters) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures the page scales correctly on different devices and screen sizes -->
+    <title>Confirmation</title> <!-- Title of the webpage displayed in the browser tab -->
+    <style>
+        /* CSS rules for the overall layout and design of the page */
+        body, html {
+            height: 100%; /* Ensures that the body and html elements cover the full height of the viewport */
+            margin: 0; /* Removes default margin from the body and html */
+            font-family: Arial, sans-serif; /* Sets the font family to Arial or a generic sans-serif font */
+        }
+        .background-image {
+            background-image: url('https://wallpapercave.com/wp/wp2314155.jpg'); /* Sets a background image for the entire page */
+            background-size: cover; /* Ensures the background image covers the whole viewport */
+            background-position: center; /* Centers the background image */
+            position: absolute; /* Positions the background image absolutely to fill the viewport */
+            width: 100%; /* Sets the width to cover the full viewport */
+            height: 100%; /* Sets the height to cover the full viewport */
+            z-index: -1; /* Places the background image behind other content on the page */
+        }
+        .overlay {
+            display: flex; /* Uses Flexbox for layout */
+            flex-direction: column; /* Aligns children elements in a vertical column */
+            justify-content: center; /* Centers content vertically */
+            align-items: center; /* Centers content horizontally */
+            background-color: rgba(255, 255, 255, 0.7); /* Sets a semi-transparent white background for the content */
+            width: 300px; /* Sets a fixed width for the content container */
+            padding: 20px; /* Adds padding inside the content container */
+            border-radius: 10px; /* Rounds the corners of the content container */
+            text-align: center; /* Centers the text within the content container */
+            position: absolute; /* Positions the content container absolutely */
+            top: 50%; /* Vertically centers the container */
+            left: 50%; /* Horizontally centers the container */
+            transform: translate(-50%, -50%); /* Adjusts the position to perfectly center the container */
+        }
+        h1 {
+            margin: 0 0 20px 0; /* Removes the top margin and adds a bottom margin for spacing */
+            font-size: 24px; /* Sets the font size for the main heading */
+            color: #333; /* Sets a dark grey color for the text */
+        }
+        button {
+            padding: 10px 20px; /* Adds space inside the button */
+            font-size: 16px; /* Sets the font size for the button text */
+            color: white; /* Sets the text color of the button */
+            background-color: #007BFF; /* Sets the background color of the button */
+            border: none; /* Removes the default border */
+            border-radius: 5px; /* Rounds the corners of the button */
+            cursor: pointer; /* Changes the cursor to a pointer when hovering over the button */
+        }
+        button:hover {
+            background-color: #0056b3; /* Changes the background color of the button when it is hovered over */
+        }
+    </style>
+</head>
+<body>
+    <!-- The body section contains the visible content of the page -->
+    <div class="background-image"></div> <!-- Div element for the background image -->
+    <div class="overlay">
+        <!-- Container for the main content on the page -->
+        <h1>Confirmation</h1> <!-- Main heading for the confirmation page -->
+        <h3 id="confirmation">{{conf}}</h3> <!-- Displays the confirmation message passed from the Flask backend -->
+        <a href="/"><button>Return Home</button></a> <!-- Link to return to the homepage with a button -->
+    </div>
+</body>
+</html>
