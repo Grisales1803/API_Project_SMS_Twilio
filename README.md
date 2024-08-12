@@ -1,4 +1,4 @@
-<img src="https://wallpapercave.com/wp/wp2314155.jpg](https://img.freepik.com/premium-photo/magic-wand-with-sparkle-blue-background-miracle-magical-stick-wizard-tool-hot-blue_493343-54062.jpg)" alt="Decorative Image Header" style="width: 100%; height: 300px; object-fit: cover;">
+<img src="https://img.freepik.com/premium-photo/magic-wand-with-sparkle-blue-background-miracle-magical-stick-wizard-tool-hot-blue_493343-54062.jpg" alt="Decorative Image Header" style="width: 100%; height: 300px; object-fit: cover;">
 
 # <p align="center"> Flask App with Weather, Space Info, Harry Potter Characters, and Twilio SMS </p>
 
